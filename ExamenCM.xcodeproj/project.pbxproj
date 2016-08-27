@@ -16,6 +16,8 @@
 		16B9CB181D71C36D002D5ABA /* ExamenCMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CB171D71C36D002D5ABA /* ExamenCMTests.m */; };
 		16B9CB231D71C36D002D5ABA /* ExamenCMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CB221D71C36D002D5ABA /* ExamenCMUITests.m */; };
 		16B9CB351D71C495002D5ABA /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 16B9CB341D71C495002D5ABA /* PodFile */; };
+		16B9CB3D1D71CF28002D5ABA /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 16B9CB3B1D71CF28002D5ABA /* map.png */; };
+		16B9CB3E1D71CF28002D5ABA /* shop.png in Resources */ = {isa = PBXBuildFile; fileRef = 16B9CB3C1D71CF28002D5ABA /* shop.png */; };
 		86D6A0DA4D6722C5A391C123 /* Pods_ExamenCM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70B14993DB7B45AD9E7A72B /* Pods_ExamenCM.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		16B9CB221D71C36D002D5ABA /* ExamenCMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExamenCMUITests.m; sourceTree = "<group>"; };
 		16B9CB241D71C36D002D5ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16B9CB341D71C495002D5ABA /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
+		16B9CB3B1D71CF28002D5ABA /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		16B9CB3C1D71CF28002D5ABA /* shop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shop.png; sourceTree = "<group>"; };
 		41612A68BEB900F880B9187D /* Pods-ExamenCM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExamenCM.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExamenCM/Pods-ExamenCM.release.xcconfig"; sourceTree = "<group>"; };
 		B70B14993DB7B45AD9E7A72B /* Pods_ExamenCM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExamenCM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FD2F3575EDD303E4E7AD5F /* Pods-ExamenCM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExamenCM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExamenCM/Pods-ExamenCM.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 		16B9CAFC1D71C36D002D5ABA /* ExamenCM */ = {
 			isa = PBXGroup;
 			children = (
+				16B9CB361D71CD27002D5ABA /* imgs */,
 				16B9CB341D71C495002D5ABA /* PodFile */,
 				16B9CB301D71C375002D5ABA /* Main */,
 				16B9CB311D71C37A002D5ABA /* Controllers */,
@@ -164,6 +169,15 @@
 				16B9CB041D71C36D002D5ABA /* Start.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		16B9CB361D71CD27002D5ABA /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				16B9CB3B1D71CF28002D5ABA /* map.png */,
+				16B9CB3C1D71CF28002D5ABA /* shop.png */,
+			);
+			name = imgs;
 			sourceTree = "<group>";
 		};
 		1EA8DABFF307E4CB836E9402 /* Frameworks */ = {
@@ -293,6 +307,8 @@
 				16B9CB0A1D71C36D002D5ABA /* Assets.xcassets in Resources */,
 				16B9CB351D71C495002D5ABA /* PodFile in Resources */,
 				16B9CB081D71C36D002D5ABA /* Main.storyboard in Resources */,
+				16B9CB3E1D71CF28002D5ABA /* shop.png in Resources */,
+				16B9CB3D1D71CF28002D5ABA /* map.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
