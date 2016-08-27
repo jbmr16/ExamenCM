@@ -12,7 +12,10 @@
 
 @end
 
-@implementation Start
+@implementation Start{
+    
+@private BOOL  mybool;
+ }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,20 +30,35 @@
 - (void)loadView {
     // Create a GMSCameraPosition that tells the map to display the
     // coordinate -33.86,151.20 at zoom level 6.
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:-33.86
-                                                            longitude:151.20
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:20.6741
+                                                            longitude:-103.3872
                                                                  zoom:6];
     GMSMapView *mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
-    mapView.myLocationEnabled = YES;
+    mapView.delegate = self;
     self.view = mapView;
     
-    // Creates a marker in the center of the map.
-    GMSMarker *marker = [[GMSMarker alloc] init];
-    marker.position = CLLocationCoordinate2DMake(-33.86, 151.20);
-    marker.title = @"Sydney";
-    marker.snippet = @"Australia";
-    marker.map = mapView;
+
 }
+#pragma mark - GMSMapViewDelegate
+
+- (void)mapView:(GMSMapView *)mapView
+didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
+    NSLog(@"You tapped at %f,%f", coordinate.latitude, coordinate.longitude);
+    
+    if (mybool) {
+        [mapView clear];
+    }
+    
+    GMSMarker *marker = [[GMSMarker alloc] init];
+    marker.position = CLLocationCoordinate2DMake(coordinate.latitude, coordinate.longitude);
+    marker.title = @"Aqui";
+   // marker.snippet = @"Mexico";
+    marker.map = mapView;
+    mybool = YES;
+    
+    
+}
+
 
 
 

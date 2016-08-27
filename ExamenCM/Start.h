@@ -10,7 +10,8 @@
 #import <GoogleMaps/GoogleMaps.h>
 #import "Start.h"   
 
-@interface Start : UIViewController
+@interface Start : UIViewController <GMSMapViewDelegate>
+
 
 
 @end
