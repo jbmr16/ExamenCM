@@ -32,7 +32,7 @@
     // coordinate -33.86,151.20 at zoom level 6.
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:20.6741
                                                             longitude:-103.3872
-                                                                 zoom:6];
+                                                                 zoom:9];
     GMSMapView *mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     mapView.delegate = self;
     self.view = mapView;
