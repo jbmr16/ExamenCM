@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebServices.h"
+#import "Declarations.h"
+#import "Start.h"
 
 @interface Wheather : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *lblcity;
@@ -14,6 +17,12 @@
 @property (strong, nonatomic) IBOutlet UILabel *lbltemp;
 @property (strong, nonatomic) IBOutlet UILabel *lbltempmin;
 @property (strong, nonatomic) IBOutlet UILabel *lbltempmax;
-@property (strong, nonatomic) IBOutlet UIImageView *buttnClim;
+
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityLoad;
+@property (strong, nonatomic) IBOutlet UILabel *lbllat;
+@property (strong, nonatomic) IBOutlet UILabel *lbllng;
+@property (strong, nonatomic) IBOutlet UIButton *buttonLoad;
+@property (strong, nonatomic) IBOutlet UILabel *lblpressure;
+@property (strong, nonatomic) IBOutlet UILabel *lblwth;
 
 @end

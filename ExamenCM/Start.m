@@ -11,7 +11,8 @@
 @interface Start ()
 
 @end
-
+float lat    ;
+float lng;
 @implementation Start{
     
 @private BOOL  mybool;
@@ -32,7 +33,7 @@
     // coordinate -33.86,151.20 at zoom level 6.
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:20.6741
                                                             longitude:-103.3872
-                                                                 zoom:9];
+                                                                 zoom:12];
     GMSMapView *mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     mapView.delegate = self;
     self.view = mapView;
@@ -49,23 +50,23 @@ didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
         [mapView clear];
     }
     
-    float lat                       = coordinate.latitude;
-    float lng                       = coordinate.longitude;
+    lat                       = coordinate.latitude;
+    lng                       = coordinate.longitude;
     NSString *strLat = [NSString stringWithFormat:@"%f", lat];
     NSString *strLng = [NSString stringWithFormat:@"%f", lng];
     
      mjsonGeo = [WebServices getWeatherWithLatitude:strLat AndLongitude:strLng];
     print(NSLog(@"mjsonGeo =%@",mjsonGeo));
        ObjectResponse *object          = [Parser parseGeoObject];
-        Sys *sysObject              =     object.system;
+        Pais *paisObject              =     object.pais;
         NSString *stName                = object.name;
-        NSString *stCountry             = sysObject.country;
+        NSString *stCountry             = paisObject.country;
 
    
     GMSMarker *marker = [[GMSMarker alloc] init];
     marker.position = CLLocationCoordinate2DMake(coordinate.latitude, coordinate.longitude);
     marker.title = stName;
-    marker.snippet =stCountry;
+    marker.snippet = stCountry;
     marker.map = mapView;
     mybool = YES;
     

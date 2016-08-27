@@ -13,6 +13,8 @@
 #import "Coord.h"
 #import "MainObject.h"
 #import "Parser.h"
+#import "Clima.h"
+#import "Pais.h"
 
 //Debug
 #define nDebugEnable        1

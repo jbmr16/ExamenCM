@@ -45,7 +45,8 @@
 		16B9CB971D71E625002D5ABA /* ObjectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CB961D71E625002D5ABA /* ObjectResponse.m */; };
 		16B9CB9A1D71E68C002D5ABA /* Coord.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CB991D71E68C002D5ABA /* Coord.m */; };
 		16B9CB9E1D71E6C8002D5ABA /* MainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CB9D1D71E6C8002D5ABA /* MainObject.m */; };
-		16B9CBA11D71F2AD002D5ABA /* Sys.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CBA01D71F2AD002D5ABA /* Sys.m */; };
+		16B9CBA11D71F2AD002D5ABA /* Pais.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CBA01D71F2AD002D5ABA /* Pais.m */; };
+		16FABCEF1D7219580021449B /* Clima.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FABCEE1D7219580021449B /* Clima.m */; };
 		16FD14221D71F93100DEC492 /* Wheather.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FD14211D71F93100DEC492 /* Wheather.m */; };
 		16FD14241D71FBB300DEC492 /* weathericon.png in Resources */ = {isa = PBXBuildFile; fileRef = 16FD14231D71FBB300DEC492 /* weathericon.png */; };
 		16FD14261D71FD1600DEC492 /* clima.png in Resources */ = {isa = PBXBuildFile; fileRef = 16FD14251D71FD1600DEC492 /* clima.png */; };
@@ -148,8 +149,10 @@
 		16B9CB991D71E68C002D5ABA /* Coord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coord.m; sourceTree = "<group>"; };
 		16B9CB9C1D71E6C8002D5ABA /* MainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainObject.h; sourceTree = "<group>"; };
 		16B9CB9D1D71E6C8002D5ABA /* MainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainObject.m; sourceTree = "<group>"; };
-		16B9CB9F1D71F2AD002D5ABA /* Sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sys.h; sourceTree = "<group>"; };
-		16B9CBA01D71F2AD002D5ABA /* Sys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sys.m; sourceTree = "<group>"; };
+		16B9CB9F1D71F2AD002D5ABA /* Pais.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pais.h; sourceTree = "<group>"; };
+		16B9CBA01D71F2AD002D5ABA /* Pais.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pais.m; sourceTree = "<group>"; };
+		16FABCED1D7219580021449B /* Clima.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clima.h; sourceTree = "<group>"; };
+		16FABCEE1D7219580021449B /* Clima.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clima.m; sourceTree = "<group>"; };
 		16FD14201D71F93100DEC492 /* Wheather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wheather.h; sourceTree = "<group>"; };
 		16FD14211D71F93100DEC492 /* Wheather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wheather.m; sourceTree = "<group>"; };
 		16FD14231D71FBB300DEC492 /* weathericon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weathericon.png; sourceTree = "<group>"; };
@@ -407,8 +410,10 @@
 				16B9CB991D71E68C002D5ABA /* Coord.m */,
 				16B9CB9C1D71E6C8002D5ABA /* MainObject.h */,
 				16B9CB9D1D71E6C8002D5ABA /* MainObject.m */,
-				16B9CB9F1D71F2AD002D5ABA /* Sys.h */,
-				16B9CBA01D71F2AD002D5ABA /* Sys.m */,
+				16B9CB9F1D71F2AD002D5ABA /* Pais.h */,
+				16B9CBA01D71F2AD002D5ABA /* Pais.m */,
+				16FABCED1D7219580021449B /* Clima.h */,
+				16FABCEE1D7219580021449B /* Clima.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -616,12 +621,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16FABCEF1D7219580021449B /* Clima.m in Sources */,
 				16B9CB9A1D71E68C002D5ABA /* Coord.m in Sources */,
 				16B9CB811D71DC85002D5ABA /* ManagedObjectInstanceProvider.m in Sources */,
 				16B9CB851D71DC85002D5ABA /* ObjectMapper.m in Sources */,
 				16B9CB8A1D71DDFD002D5ABA /* Declarations.m in Sources */,
 				16B9CB051D71C36D002D5ABA /* Start.m in Sources */,
-				16B9CBA11D71F2AD002D5ABA /* Sys.m in Sources */,
+				16B9CBA11D71F2AD002D5ABA /* Pais.m in Sources */,
 				16B9CB7E1D71DC84002D5ABA /* SBJsonWriter.m in Sources */,
 				16B9CB021D71C36D002D5ABA /* AppDelegate.m in Sources */,
 				16B9CB7C1D71DC84002D5ABA /* SBJsonTokeniser.m in Sources */,
