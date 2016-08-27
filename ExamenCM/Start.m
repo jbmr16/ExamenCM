@@ -7,7 +7,7 @@
 //
 
 #import "Start.h"
-
+#import "WebServices.h"
 @interface Start ()
 
 @end
@@ -49,16 +49,28 @@ didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
         [mapView clear];
     }
     
+    float lat                       = coordinate.latitude;
+    float lng                       = coordinate.longitude;
+    NSString *strLat = [NSString stringWithFormat:@"%f", lat];
+    NSString *strLng = [NSString stringWithFormat:@"%f", lng];
+    
+     mjsonGeo = [WebServices getWeatherWithLatitude:strLat AndLongitude:strLng];
+    print(NSLog(@"mjsonGeo =%@",mjsonGeo));
+       ObjectResponse *object          = [Parser parseGeoObject];
+        Sys *sysObject              =     object.system;
+        NSString *stName                = object.name;
+        NSString *stCountry             = sysObject.country;
+
+   
     GMSMarker *marker = [[GMSMarker alloc] init];
     marker.position = CLLocationCoordinate2DMake(coordinate.latitude, coordinate.longitude);
-    marker.title = @"Aqui";
-   // marker.snippet = @"Mexico";
+    marker.title = stName;
+    marker.snippet =stCountry;
     marker.map = mapView;
     mybool = YES;
     
     
 }
-
 
 
 

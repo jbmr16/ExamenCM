@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <GoogleMaps/GoogleMaps.h>
-#import "Start.h"   
+#import "Start.h"  
+#import "WebServices.h"
+#import "Declarations.h"
 
 @interface Start : UIViewController <GMSMapViewDelegate>
 

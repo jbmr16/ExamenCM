@@ -38,6 +38,17 @@
 		16B9CB841D71DC85002D5ABA /* InCodeMappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CB6C1D71DC84002D5ABA /* InCodeMappingProvider.m */; };
 		16B9CB851D71DC85002D5ABA /* ObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CB6F1D71DC84002D5ABA /* ObjectMapper.m */; };
 		16B9CB861D71DC85002D5ABA /* ObjectMappingInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CB711D71DC84002D5ABA /* ObjectMappingInfo.m */; };
+		16B9CB8A1D71DDFD002D5ABA /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CB891D71DDFD002D5ABA /* Declarations.m */; };
+		16B9CB8D1D71DE0C002D5ABA /* WebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CB8C1D71DE0C002D5ABA /* WebServices.m */; };
+		16B9CB901D71DE1A002D5ABA /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CB8F1D71DE1A002D5ABA /* Parser.m */; };
+		16B9CB931D71DE3B002D5ABA /* OCMapperConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CB921D71DE3B002D5ABA /* OCMapperConfig.m */; };
+		16B9CB971D71E625002D5ABA /* ObjectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CB961D71E625002D5ABA /* ObjectResponse.m */; };
+		16B9CB9A1D71E68C002D5ABA /* Coord.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CB991D71E68C002D5ABA /* Coord.m */; };
+		16B9CB9E1D71E6C8002D5ABA /* MainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CB9D1D71E6C8002D5ABA /* MainObject.m */; };
+		16B9CBA11D71F2AD002D5ABA /* Sys.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CBA01D71F2AD002D5ABA /* Sys.m */; };
+		16FD14221D71F93100DEC492 /* Wheather.m in Sources */ = {isa = PBXBuildFile; fileRef = 16FD14211D71F93100DEC492 /* Wheather.m */; };
+		16FD14241D71FBB300DEC492 /* weathericon.png in Resources */ = {isa = PBXBuildFile; fileRef = 16FD14231D71FBB300DEC492 /* weathericon.png */; };
+		16FD14261D71FD1600DEC492 /* clima.png in Resources */ = {isa = PBXBuildFile; fileRef = 16FD14251D71FD1600DEC492 /* clima.png */; };
 		86D6A0DA4D6722C5A391C123 /* Pods_ExamenCM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70B14993DB7B45AD9E7A72B /* Pods_ExamenCM.framework */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +134,26 @@
 		16B9CB701D71DC84002D5ABA /* ObjectMappingInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectMappingInfo.h; sourceTree = "<group>"; };
 		16B9CB711D71DC84002D5ABA /* ObjectMappingInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectMappingInfo.m; sourceTree = "<group>"; };
 		16B9CB721D71DC84002D5ABA /* OCMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMapper.h; sourceTree = "<group>"; };
+		16B9CB881D71DDFD002D5ABA /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
+		16B9CB891D71DDFD002D5ABA /* Declarations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
+		16B9CB8B1D71DE0C002D5ABA /* WebServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServices.h; sourceTree = "<group>"; };
+		16B9CB8C1D71DE0C002D5ABA /* WebServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServices.m; sourceTree = "<group>"; };
+		16B9CB8E1D71DE1A002D5ABA /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		16B9CB8F1D71DE1A002D5ABA /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
+		16B9CB911D71DE3B002D5ABA /* OCMapperConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMapperConfig.h; sourceTree = "<group>"; };
+		16B9CB921D71DE3B002D5ABA /* OCMapperConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMapperConfig.m; sourceTree = "<group>"; };
+		16B9CB951D71E625002D5ABA /* ObjectResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectResponse.h; sourceTree = "<group>"; };
+		16B9CB961D71E625002D5ABA /* ObjectResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectResponse.m; sourceTree = "<group>"; };
+		16B9CB981D71E68C002D5ABA /* Coord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coord.h; sourceTree = "<group>"; };
+		16B9CB991D71E68C002D5ABA /* Coord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coord.m; sourceTree = "<group>"; };
+		16B9CB9C1D71E6C8002D5ABA /* MainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainObject.h; sourceTree = "<group>"; };
+		16B9CB9D1D71E6C8002D5ABA /* MainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainObject.m; sourceTree = "<group>"; };
+		16B9CB9F1D71F2AD002D5ABA /* Sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sys.h; sourceTree = "<group>"; };
+		16B9CBA01D71F2AD002D5ABA /* Sys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sys.m; sourceTree = "<group>"; };
+		16FD14201D71F93100DEC492 /* Wheather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wheather.h; sourceTree = "<group>"; };
+		16FD14211D71F93100DEC492 /* Wheather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wheather.m; sourceTree = "<group>"; };
+		16FD14231D71FBB300DEC492 /* weathericon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weathericon.png; sourceTree = "<group>"; };
+		16FD14251D71FD1600DEC492 /* clima.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clima.png; sourceTree = "<group>"; };
 		41612A68BEB900F880B9187D /* Pods-ExamenCM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExamenCM.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExamenCM/Pods-ExamenCM.release.xcconfig"; sourceTree = "<group>"; };
 		B70B14993DB7B45AD9E7A72B /* Pods_ExamenCM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExamenCM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FD2F3575EDD303E4E7AD5F /* Pods-ExamenCM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExamenCM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExamenCM/Pods-ExamenCM.debug.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +210,7 @@
 		16B9CAFC1D71C36D002D5ABA /* ExamenCM */ = {
 			isa = PBXGroup;
 			children = (
+				16B9CB941D71E608002D5ABA /* Models */,
 				16B9CB871D71DCD3002D5ABA /* Classes */,
 				16B9CB361D71CD27002D5ABA /* imgs */,
 				16B9CB341D71C495002D5ABA /* PodFile */,
@@ -222,6 +254,14 @@
 		16B9CB301D71C375002D5ABA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				16B9CB921D71DE3B002D5ABA /* OCMapperConfig.m */,
+				16B9CB911D71DE3B002D5ABA /* OCMapperConfig.h */,
+				16B9CB8B1D71DE0C002D5ABA /* WebServices.h */,
+				16B9CB8C1D71DE0C002D5ABA /* WebServices.m */,
+				16B9CB881D71DDFD002D5ABA /* Declarations.h */,
+				16B9CB891D71DDFD002D5ABA /* Declarations.m */,
+				16B9CB8E1D71DE1A002D5ABA /* Parser.h */,
+				16B9CB8F1D71DE1A002D5ABA /* Parser.m */,
 				16B9CB001D71C36D002D5ABA /* AppDelegate.h */,
 				16B9CB011D71C36D002D5ABA /* AppDelegate.m */,
 			);
@@ -233,6 +273,8 @@
 			children = (
 				16B9CB031D71C36D002D5ABA /* Start.h */,
 				16B9CB041D71C36D002D5ABA /* Start.m */,
+				16FD14201D71F93100DEC492 /* Wheather.h */,
+				16FD14211D71F93100DEC492 /* Wheather.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -240,6 +282,8 @@
 		16B9CB361D71CD27002D5ABA /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				16FD14251D71FD1600DEC492 /* clima.png */,
+				16FD14231D71FBB300DEC492 /* weathericon.png */,
 				16B9CB3B1D71CF28002D5ABA /* map.png */,
 				16B9CB3C1D71CF28002D5ABA /* shop.png */,
 			);
@@ -352,6 +396,21 @@
 				16B9CB591D71DC84002D5ABA /* ocmapper */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		16B9CB941D71E608002D5ABA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				16B9CB951D71E625002D5ABA /* ObjectResponse.h */,
+				16B9CB961D71E625002D5ABA /* ObjectResponse.m */,
+				16B9CB981D71E68C002D5ABA /* Coord.h */,
+				16B9CB991D71E68C002D5ABA /* Coord.m */,
+				16B9CB9C1D71E6C8002D5ABA /* MainObject.h */,
+				16B9CB9D1D71E6C8002D5ABA /* MainObject.m */,
+				16B9CB9F1D71F2AD002D5ABA /* Sys.h */,
+				16B9CBA01D71F2AD002D5ABA /* Sys.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		1EA8DABFF307E4CB836E9402 /* Frameworks */ = {
@@ -477,7 +536,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16FD14241D71FBB300DEC492 /* weathericon.png in Resources */,
 				16B9CB0D1D71C36D002D5ABA /* LaunchScreen.storyboard in Resources */,
+				16FD14261D71FD1600DEC492 /* clima.png in Resources */,
 				16B9CB0A1D71C36D002D5ABA /* Assets.xcassets in Resources */,
 				16B9CB351D71C495002D5ABA /* PodFile in Resources */,
 				16B9CB081D71C36D002D5ABA /* Main.storyboard in Resources */,
@@ -555,9 +616,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B9CB9A1D71E68C002D5ABA /* Coord.m in Sources */,
 				16B9CB811D71DC85002D5ABA /* ManagedObjectInstanceProvider.m in Sources */,
 				16B9CB851D71DC85002D5ABA /* ObjectMapper.m in Sources */,
+				16B9CB8A1D71DDFD002D5ABA /* Declarations.m in Sources */,
 				16B9CB051D71C36D002D5ABA /* Start.m in Sources */,
+				16B9CBA11D71F2AD002D5ABA /* Sys.m in Sources */,
 				16B9CB7E1D71DC84002D5ABA /* SBJsonWriter.m in Sources */,
 				16B9CB021D71C36D002D5ABA /* AppDelegate.m in Sources */,
 				16B9CB7C1D71DC84002D5ABA /* SBJsonTokeniser.m in Sources */,
@@ -566,16 +630,22 @@
 				16B9CB791D71DC84002D5ABA /* SBJsonStreamWriter.m in Sources */,
 				16B9CB751D71DC84002D5ABA /* SBJsonStreamParser.m in Sources */,
 				16B9CB741D71DC84002D5ABA /* SBJsonParser.m in Sources */,
+				16B9CB9E1D71E6C8002D5ABA /* MainObject.m in Sources */,
 				16B9CB761D71DC84002D5ABA /* SBJsonStreamParserAccumulator.m in Sources */,
 				16B9CB781D71DC84002D5ABA /* SBJsonStreamParserState.m in Sources */,
 				16B9CB7A1D71DC84002D5ABA /* SBJsonStreamWriterAccumulator.m in Sources */,
 				16B9CB831D71DC85002D5ABA /* CommonLoggingProvider.m in Sources */,
+				16B9CB971D71E625002D5ABA /* ObjectResponse.m in Sources */,
+				16B9CB931D71DE3B002D5ABA /* OCMapperConfig.m in Sources */,
+				16B9CB901D71DE1A002D5ABA /* Parser.m in Sources */,
 				16B9CB7B1D71DC84002D5ABA /* SBJsonStreamWriterState.m in Sources */,
 				16B9CB7D1D71DC84002D5ABA /* SBJsonUTF8Stream.m in Sources */,
 				16B9CB861D71DC85002D5ABA /* ObjectMappingInfo.m in Sources */,
 				16B9CB841D71DC85002D5ABA /* InCodeMappingProvider.m in Sources */,
 				16B9CAFF1D71C36D002D5ABA /* main.m in Sources */,
+				16B9CB8D1D71DE0C002D5ABA /* WebServices.m in Sources */,
 				16B9CB801D71DC84002D5ABA /* NSObject+ObjectMapper.m in Sources */,
+				16FD14221D71F93100DEC492 /* Wheather.m in Sources */,
 				16B9CB771D71DC84002D5ABA /* SBJsonStreamParserAdapter.m in Sources */,
 				16B9CB821D71DC85002D5ABA /* ObjectInstanceProvider.m in Sources */,
 			);
