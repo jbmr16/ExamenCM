@@ -46,6 +46,7 @@
 		16B9CB9A1D71E68C002D5ABA /* Coord.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CB991D71E68C002D5ABA /* Coord.m */; };
 		16B9CB9E1D71E6C8002D5ABA /* MainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CB9D1D71E6C8002D5ABA /* MainObject.m */; };
 		16B9CBA11D71F2AD002D5ABA /* Pais.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9CBA01D71F2AD002D5ABA /* Pais.m */; };
+		16F7AC4E1D735290008D6DBB /* paypal.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F7AC4D1D735290008D6DBB /* paypal.png */; };
 		16F9D5D31D724A3400767FC9 /* cellHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F9D5D11D724A3400767FC9 /* cellHome.m */; };
 		16F9D5D41D724A3400767FC9 /* cellHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16F9D5D21D724A3400767FC9 /* cellHome.xib */; };
 		16F9D5E41D72508700767FC9 /* MainShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F9D5E31D72508700767FC9 /* MainShop.m */; };
@@ -159,6 +160,7 @@
 		16B9CB9D1D71E6C8002D5ABA /* MainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainObject.m; sourceTree = "<group>"; };
 		16B9CB9F1D71F2AD002D5ABA /* Pais.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pais.h; sourceTree = "<group>"; };
 		16B9CBA01D71F2AD002D5ABA /* Pais.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pais.m; sourceTree = "<group>"; };
+		16F7AC4D1D735290008D6DBB /* paypal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paypal.png; sourceTree = "<group>"; };
 		16F9D5D01D724A3400767FC9 /* cellHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellHome.h; sourceTree = "<group>"; };
 		16F9D5D11D724A3400767FC9 /* cellHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellHome.m; sourceTree = "<group>"; };
 		16F9D5D21D724A3400767FC9 /* cellHome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellHome.xib; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 		16B9CB361D71CD27002D5ABA /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				16F7AC4D1D735290008D6DBB /* paypal.png */,
 				16F9D5E81D73270700767FC9 /* cam.jpg */,
 				16F9D5E91D73270700767FC9 /* cham.jpg */,
 				16F9D5EA1D73270700767FC9 /* col.jpg */,
@@ -591,6 +594,7 @@
 				16B9CB3E1D71CF28002D5ABA /* shop.png in Resources */,
 				16F9D5EE1D73270700767FC9 /* cham.jpg in Resources */,
 				16B9CB3D1D71CF28002D5ABA /* map.png in Resources */,
+				16F7AC4E1D735290008D6DBB /* paypal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

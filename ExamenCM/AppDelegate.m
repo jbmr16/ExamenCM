@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 @import GoogleMaps;
 #import "OCMapperConfig.h"
+#import "PayPalMobile.h"
 @interface AppDelegate ()
 
 @end

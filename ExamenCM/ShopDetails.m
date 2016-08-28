@@ -59,9 +59,9 @@
     PayPalPayment *payment = [[PayPalPayment alloc] init];
     
     // Amount, currency, and description
-    payment.amount = [[NSDecimalNumber alloc] initWithString:@"39.95"];
+    payment.amount = [[NSDecimalNumber alloc] initWithString:_shopPriceSelected];
     payment.currencyCode = @"USD";
-    payment.shortDescription = @"Awesome saws";
+    payment.shortDescription = _shopTitleSelected;
     
     // Use the intent property to indicate that this is a "sale" payment,
     // meaning combined Authorization + Capture.
@@ -74,7 +74,7 @@
     
     // If your app collects Shipping Address information from the customer,
     // or already stores that information on your server, you may provide it here.
-    payment.shippingAddress = address; // a previously-created PayPalShippingAddress object
+    //payment.shippingAddress = address; // a previously-created PayPalShippingAddress object
     
     // Several other optional fields that you can set here are documented in PayPalPayment.h,
     // including paymentDetails, items, invoiceNumber, custom, softDescriptor, etc.
