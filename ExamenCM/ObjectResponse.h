@@ -10,7 +10,7 @@
 #import "Coord.h"
 #import "MainObject.h"  
 #import "Pais.h"
-#import "Clima.h"   
+
 
 @interface ObjectResponse : NSObject
 
@@ -18,11 +18,11 @@
 
 @property (nonatomic,strong) MainObject *main;
 
-@property (nonatomic,strong) Pais *pais;
+@property (nonatomic,strong) Pais *sys;
 
 @property (nonatomic,strong) NSString *name;
 
-@property (nonatomic,strong) Clima *clim;
+
 
 
 @end

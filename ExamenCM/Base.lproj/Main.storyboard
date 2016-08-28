@@ -20,21 +20,107 @@
             </objects>
             <point key="canvasLocation" x="1292" y="178"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="GvJ-lR-ma9">
+            <objects>
+                <navigationController id="DlJ-Ee-iUJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="g7A-8R-3kx"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9ih-yX-c0g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ysW-v2-og7" kind="relationship" relationship="rootViewController" id="Vdj-ar-XyB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m5v-VJ-xVC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1292" y="812"/>
+        </scene>
         <!--Shop-->
         <scene sceneID="9Ht-d6-VXg">
             <objects>
-                <viewController id="ysW-v2-og7" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QPG-Id-mU7">
+                <viewController id="ysW-v2-og7" customClass="MainShop" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yup-dc-mJe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Hfs-bt-NRo">
+                                <rect key="frame" x="0.0" y="64" width="320" height="454"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ysW-v2-og7" id="uQf-y2-D9U"/>
+                                    <outlet property="delegate" destination="ysW-v2-og7" id="FvR-b0-BbX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Shop" image="shop.png" selectedImage="shop.png" id="1Ia-ek-iNb"/>
                     <navigationItem key="navigationItem" id="SU4-S5-UD1"/>
+                    <connections>
+                        <segue destination="r97-Bo-e5c" kind="push" identifier="shopSelect" id="FMy-tZ-Pll"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zxB-a2-oIs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1292" y="828"/>
+            <point key="canvasLocation" x="1681" y="812"/>
+        </scene>
+        <!--Shop Details-->
+        <scene sceneID="mvj-e3-4ap">
+            <objects>
+                <viewController id="r97-Bo-e5c" customClass="ShopDetails" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H2f-bb-pvS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="pTu-Ra-Eez">
+                                <rect key="frame" x="0.0" y="65" width="320" height="168"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kwI-oG-3L7">
+                                <rect key="frame" x="20" y="261" width="271" height="69"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f6a-qW-oEI">
+                                <rect key="frame" x="53" y="363" width="54" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xtx-1j-a2P">
+                                <rect key="frame" x="103" y="363" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9KH-Or-JuR">
+                                <rect key="frame" x="25" y="241" width="271" height="25"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aBY-a6-Jje"/>
+                    <connections>
+                        <outlet property="lblPrice" destination="Xtx-1j-a2P" id="pd5-Og-hnN"/>
+                        <outlet property="lblTitle" destination="9KH-Or-JuR" id="1LI-lp-Xay"/>
+                        <outlet property="lbldesc" destination="kwI-oG-3L7" id="Jcp-9W-Ep0"/>
+                        <outlet property="lblimg" destination="pTu-Ra-Eez" id="u47-jJ-ccQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aiz-aX-uFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2038" y="812"/>
         </scene>
         <!--Wheather-->
         <scene sceneID="1yF-7v-BNm">
@@ -128,9 +214,6 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" restorationIdentifier="activityLoad" hidesWhenStopped="YES" style="gray" id="np6-B3-fa6" userLabel="activityLoad">
-                                <rect key="frame" x="150" y="466" width="20" height="20"/>
-                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YqW-ms-PVO">
                                 <rect key="frame" x="137" y="416" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -171,20 +254,9 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Weather:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8AP-NP-bUt">
-                                <rect key="frame" x="20" y="332" width="138" height="26"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="18"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RM7-wo-fdD" userLabel="lbllng">
-                                <rect key="frame" x="203" y="332" width="54" height="21"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="18"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" restorationIdentifier="activityLoad" hidesWhenStopped="YES" style="gray" id="np6-B3-fa6" userLabel="activityLoad">
+                                <rect key="frame" x="163" y="467" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -200,7 +272,6 @@
                         <outlet property="lbltemp" destination="ZVQ-Mc-Ycc" id="F7L-sZ-10k"/>
                         <outlet property="lbltempmax" destination="AfJ-cr-Q7e" id="j8X-gJ-HCN"/>
                         <outlet property="lbltempmin" destination="vAG-Cv-sTO" id="30R-GW-3oo"/>
-                        <outlet property="lblwth" destination="RM7-wo-fdD" id="t6W-dT-EV4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DUo-05-yCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -218,8 +289,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="IIA-mk-IDm" kind="relationship" relationship="viewControllers" id="rhb-qG-PTD"/>
-                        <segue destination="ysW-v2-og7" kind="relationship" relationship="viewControllers" id="XD4-qv-33u"/>
                         <segue destination="T5B-4X-P2p" kind="relationship" relationship="viewControllers" id="AT0-pt-sv5"/>
+                        <segue destination="DlJ-Ee-iUJ" kind="relationship" relationship="viewControllers" id="FBP-2s-LD7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtA-81-bgS" userLabel="First Responder" sceneMemberID="firstResponder"/>

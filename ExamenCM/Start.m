@@ -58,7 +58,7 @@ didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
      mjsonGeo = [WebServices getWeatherWithLatitude:strLat AndLongitude:strLng];
     print(NSLog(@"mjsonGeo =%@",mjsonGeo));
        ObjectResponse *object          = [Parser parseGeoObject];
-        Pais *paisObject              =     object.pais;
+        Pais *paisObject              =     object.sys;
         NSString *stName                = object.name;
         NSString *stCountry             = paisObject.country;
 

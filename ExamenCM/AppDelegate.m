@@ -21,6 +21,8 @@
     [GMSServices provideAPIKey:@"AIzaSyDA-g54Eg2l8up-i2zzMTewxkcGIvFrALM"];
     [OCMapperConfig configure];
     
+    [PayPalMobile initializeWithClientIdsForEnvironments:@{                                                        PayPalEnvironmentSandbox : @"YOUR_CLIENT_ID_FOR_SANDBOX"}];
+    
     return YES;
 }
 

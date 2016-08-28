@@ -4,6 +4,6 @@ use_frameworks!
 
 target 'ExamenCM' do
 pod 'GoogleMaps'
-pod 'GooglePlaces'
+pod 'PayPal-iOS-SDK	'
 
 end

@@ -76,7 +76,7 @@
 //----------------------------------------------------------------------------------------------
 - (void)loadData {
     mjsonGeo                        = [WebServices getWeatherWithLatitude:strLat AndLongitude:strLng];
-    print(NSLog(@"mjsonGeo  = %@",mjsonGeo))
+    
 }
 
 /**/
@@ -90,9 +90,7 @@
         float tempCelsius               = mainObject.temp - 273.15;
         float tempCelsiusMax            = mainObject.temp_min - 273.15;
         float tempCelsiusMin            = mainObject.temp_max - 273.15;
-        
-        Clima *clim = object.clim;
-        NSString *stDescr                = clim.description;
+
         self.lbllat.text = strLat;
         self.lbllng.text= strLng;
         self.lbltemp.text          = [NSString stringWithFormat:@"%.1f", tempCelsius];
@@ -104,7 +102,7 @@
         self.lbltempmax.text          = [self.lbltempmax.text  stringByAppendingString:@" ºC"];
         self.lblcity.text          = stName;
         self.lblpressure.text      = [NSString stringWithFormat:@"%f", mainObject.pressure];
-        self.lblwth.text =  stDescr;
+
  
         
         
