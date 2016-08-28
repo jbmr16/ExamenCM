@@ -16,6 +16,7 @@
 @property NSString *shopPhotoSelected;
 @property NSString *shopDetailsSelected;
 @property NSString *shopPriceSelected;
+@property NSString *cool;
 
 
 @property (strong, nonatomic) IBOutlet UIImageView *lblimg;

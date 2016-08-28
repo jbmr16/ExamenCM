@@ -22,7 +22,7 @@
     self.lbldesc.text = self.shopDetailsSelected;
     self.lblimg.image = [UIImage imageNamed:self.shopPhotoSelected];
     self.lblPrice.text = self.shopPriceSelected;
-    
+
      self.lbldesc.numberOfLines = 0;
      [self.lbldesc sizeToFit];
 }
